@@ -37,6 +37,46 @@
     </header>
 
 
+    <form>
+         
+        <div class="recipe_info">
+            <label for="recipe_id">Recipe ID</label>
+            <input type="text" id="recipe_id">
+    
+            <label for="recipe_name">Recipe Name</label>
+            <input type="text" id="recipe_name">
+    
+            <label for="course_name">Course Name</label>
+            <select name="course_name" id="course_name">
+                <option value="dessert">appetizers</option>
+                <option value="dessert">dessert</option>
+                <option value="dessert">main course</option>
+            </select>
+        </div>
+
+        <div class="ingredients">
+            <label for="ingredient">ingredients</label>
+            <div class="ingredient">
+                <label for="ingredient_id">Ingredient ID</label>
+                <input type="text" class="ingredient_id">
+
+                <label for="Ingredient_name">Ingredient Name</label>
+                <input type="text" class="ingredient_name">
+
+                <label for="Ingredient_quantity">Ingredient Quantity</label>
+                <input type="text" class="ingredient_quantity">
+            </div>
+            
+            <button id="add_Ingredient">add Ingredient</button>
+        </div>
+
+        <div class="recipe_desc">
+            <label for="recipe_description">Recipe Description</label>
+            <textarea name="recipe_description" id="recipe_description" placeholder="Describe your recipe here"></textarea>
+        </div>
+
+    </form>
+
     <!-- Footer -->
     <footer>
         <p>Copyright 2024 - Foodies</p>
