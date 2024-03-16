@@ -10,7 +10,7 @@
 
     <div class="container">
         <h3 class="login-title">SignUp</h3>
-        <form action="submit">
+        <form>
             <div id="email-filed">
                 <label for="Email">Email Address</label>
                 <input type="email" placeholder="Name@gamil.com">
@@ -32,12 +32,18 @@
                 <label for="password">Password</label>
                 <input type="password" placeholder="password">
             </div>
+
+            <div>
+                <label for="password">Confirm Password</label>
+                <input type="password" placeholder="Password" id="confirm-password">
+            </div>
+
+            <div class="btns">
+                <input id="submit-btn" type="submit">
+                <p id="No-Account">Already have Account? <a href="Login.html">Sign In!</a></p>
+            </div>
         </form>
 
-        <div class="btns">
-            <button id="submit-btn">Sign In</button>
-            <p id="No-Account">Already have Account? <a href="Login.html">Sign In!</a></p>
-        </div>
     </div>
     
 </body>
