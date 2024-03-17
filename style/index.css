@@ -88,24 +88,21 @@ header .input-icons {
     flex-grow: 1;
 }
 
-.search-icon {
-    position: absolute;
-    padding: 10px;
-    color: #64748B;
-    text-align: center;
-    background-color: #F8FAFC;
-    /* right: 2px; */
-    right: 100px;
-    z-index: 99;
-    border-radius: 4px;
-}
-
-.input-field {
+header .right-side .input-field {
     width: 100%;
-    padding: 11px;
-    /* text-align: center; */
+    padding: 10px;
+    /* text-align: center;  */
     border: none;
     background-color: #F1F5F9;
-    position: relative;
-    border-radius: 4px;
+    border-radius: 2px 0 0 2px;
+}
+
+header .right-side .search-icon {
+    border: none;
+    background-color: #C3CFD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 0 2px 2px 0;
 }
