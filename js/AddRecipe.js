@@ -1,11 +1,11 @@
-const ingredients = document.querySelector(".ingredients");
+const menuBtn = document.querySelector('.menu')
+const exitBtn = document.querySelector('.exit')
+const menu = document.querySelector('aside')
 
-// const ingredientID = document.querySelector('.ingredient_id');
-// const ingredientName = document.querySelector('.ingredient_name');
-// const ingredientQuantity = document.querySelector('.ingredient_quantity');
+const ingredients = document.querySelector(".ingredients");
 const addBtn = document.querySelector("#add_Ingredient");
 
-console.log(ingredients.innerHTML);
+
 
 
 addBtn.addEventListener("click", () => {
@@ -60,3 +60,19 @@ addBtn.addEventListener("click", () => {
 
   ingredients.appendChild(ingredientElement);
 });
+
+
+
+
+
+
+
+menuBtn.addEventListener('click', function(e) {
+    console.log('ehhfs');
+    e.preventDefault();
+    menu.classList.toggle('toggle-menu');
+})
+exitBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    menu.classList.toggle('toggle-menu')
+})

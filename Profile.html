@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodies</title>
+    <link rel="stylesheet" href="/style/Profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="left-side">
             <div class="logo">
-                <h2>Foodies</h2>
+                <h1><a href="/index.html">Foo<span>dies</span></a></h1>
             </div>
 
             
-            <nav>
+            <nav class="hide-mobile">
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/Favorite.html">Favorite</a></li>
@@ -24,15 +31,48 @@
         </div>
 
         <div class="right-side">
-            <input type="search">
+            <div class="input-icons">
+                <input type="search" class="input-field" placeholder="search">
+                <button class="search-icon">
+                    <img src="/Assets/Icon.svg" alt="Search Icon" class="search-icon">
+                </button>
+            </div>
 
-            <div class="profile">
+            <div class="profile hide-mobile">
                 <a href="#">
                     <img src="Assets/profile.svg" width="40px" height="40px" alt="">
                 </a>
             </div>
+
+            <a href="#" class="menu">
+                <svg viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 12.5H18V10.5H0V12.5ZM0 7.5H18V5.5H0V7.5ZM0 0.5V2.5H18V0.5H0Z" fill="black"/>
+                </svg>
+            </a>
+
         </div>
     </header>
+
+    <aside>
+        <img src="assets/mobile-exit.svg" alt="Exit mobile nav" class="exit hide-tablet">
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Favorite.html">Favorite</a>
+                </li>
+                <li>
+                    <a href="/Discover.html">Discover</a>
+                </li>
+                <li>
+                    <a href="/Profile.html">Account</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
 
     <div class="sub-header">
         <div class="sub-links">
@@ -72,6 +112,8 @@
     <footer>
         <p>Copyright 2024 - Foodies</p>
     </footer>
+
+    <script src="js/profile.js"></script>
 </body>
 </html>
 
