@@ -10,7 +10,7 @@ const addBtn = document.querySelector("#add_Ingredient");
 
 addBtn.addEventListener("click", () => {
 
-    // not working make array of objects and append the and details in it next time
+//     // not working make array of objects and append the and details in it next time
 //   const ingredientElement = document.createElement("div");
 //   ingredientElement.classList.add("ingredient");
 
@@ -42,23 +42,9 @@ addBtn.addEventListener("click", () => {
 //   ingredientElement.appendChild(ingredientQuantityLabel);
 //   ingredientElement.appendChild(ingredientQuantityInput);
 
-    // ingredientElement.innerHTML =  `
-    
-    // <div class="ingredient">
-    // <label for="ingredient_id">Ingredient ID</label>
-    // <input type="text" class="ingredient_id">
-
-    // <label for="Ingredient_name">Ingredient Name</label>
-    // <input type="text" class="ingredient_name">
-
-    // <label for="Ingredient_quantity">Ingredient Quantity</label>
-    // <input type="text" class="ingredient_quantity">
-    // </div>
-    
-    // `
     
 
-  ingredients.appendChild(ingredientElement);
+//   ingredients.appendChild(ingredientElement);
 });
 
 

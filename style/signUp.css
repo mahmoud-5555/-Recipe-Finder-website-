@@ -59,7 +59,16 @@ form #name > div {
     width: 50%;
 }
 
+.admin_checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.admin_checkbox input {
+    width: 20px;
+    height: 20px;
+}
 
 form div input {
     border: 1px solid #d4d4d4;

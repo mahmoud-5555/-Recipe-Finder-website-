@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AddRecipe</title>
     <link rel="stylesheet" href="/style/global.css" />
+    <link rel="stylesheet" href="style/AddRecipe.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -89,52 +90,120 @@
         </aside>
     
 
+        <!-- Form -->
 
-    <form>
+        <div class="wrapper">
+          <form method="post">
          
-        <div class="recipe_info">
-            <label for="recipe_id">Recipe ID</label>
-            <input type="text" id="recipe_id">
+            <div class="recipe_info">
+              <div class="row-1">
+
+                <div class="col-1">
+                  <label for="recipe_id">Recipe ID</label>
+                  <input type="text" id="recipe_id">
+                </div>
+
+                <div class="col-2">
+                  <label for="recipe_name">Recipe Name</label>
+                  <input type="text" id="recipe_name">
+                </div>
+              </div>
+
+              <div class="row-2">
+                <div class="col-1">
+                  <label for="course_name">Course Name</label>
+                  <select name="course_name" id="course_name">
+                      <option value="dessert">appetizers</option>
+                      <option value="dessert">dessert</option>
+                      <option value="dessert">main course</option>
+                  </select>
+                </div>
+                <div class="col-2">
+                 <label for=" MealImage"> Meal Image</label>
+                 <input type="file">
+                </div>
+              </div>
+            </div>
     
-            <label for="recipe_name">Recipe Name</label>
-            <input type="text" id="recipe_name">
+            <div class="ingredients">
+
+              <h3 for="ingredients">ingredients</h3>
+                <div class="ingredient">
+                  <div class="row-1">
+                    <div class="col-1">
+                      <label for="ingredient_id">Ingredient ID</label>
+                      <input type="text" class="ingredient_id">
+                    </div>
+
+                    <div class="col-2">
+                      <label for="Ingredient_name">Ingredient Name</label>
+                      <input type="text" class="ingredient_name">
+                    </div>
+                  </div>
+
+                  <div class="row-2">
+                    <label for="Ingredient_quantity">Ingredient Quantity</label>
+                    <input type="text" class="ingredient_quantity">
+                  </div>
+                </div>
+                
+                <button id="add_Ingredient">Add Ingredient</button>
+            </div>
     
-            <label for="course_name">Course Name</label>
-            <select name="course_name" id="course_name">
-                <option value="dessert">appetizers</option>
-                <option value="dessert">dessert</option>
-                <option value="dessert">main course</option>
-            </select>
-        </div>
-
-        <label for="ingredients">ingredients</label>
-        <div class="ingredients">
-            <div class="ingredient">
-                <label for="ingredient_id">Ingredient ID</label>
-                <input type="text" class="ingredient_id">
-
-                <label for="Ingredient_name">Ingredient Name</label>
-                <input type="text" class="ingredient_name">
-
-                <label for="Ingredient_quantity">Ingredient Quantity</label>
-                <input type="text" class="ingredient_quantity">
+            <div class="recipe_desc">
+                <label for="recipe_description">Recipe Description</label>
+                <textarea name="recipe_description" id="recipe_description" placeholder="Describe your recipe here"></textarea>
             </div>
             
-            <button id="add_Ingredient">add Ingredient</button>
-        </div>
+            <input type="submit">
+        </form>
 
-        <div class="recipe_desc">
-            <label for="recipe_description">Recipe Description</label>
-            <textarea name="recipe_description" id="recipe_description" placeholder="Describe your recipe here"></textarea>
         </div>
-        
-        <input type="submit">
-    </form>
-
+         
+    
     <!-- Footer -->
     <footer>
+      <div class="top">
+        <div class="col">
+          <div class="logo">
+            <h1>
+              <a href="/index.html">Foo<span>dies</span></a>
+            </h1>
+            <p>Best make you can recipe for your daily life for more </p>
+          </div>
+        </div>
+        <div class="col">
+          <nav>
+            <ul>
+              <li><a href="#">main course</a></li>
+              <li><a href="#">dessert</a></li>
+              <li><a href="#">appetizers</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <nav>
+            <ul>
+              <li><a href="#">Best Meals</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Article</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col">
+          <nav>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact US</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="bottom">
         <p>Copyright 2024 - Foodies</p>
+      </div>
     </footer>
+
 
     <script src="/js/AddRecipe.js"></script>
 
