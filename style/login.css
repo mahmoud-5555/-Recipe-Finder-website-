@@ -28,7 +28,7 @@ body {
     width: 40vw;
     background-color: #fff;
     padding: 2rem;
-    margin: 8rem auto;
+    margin: 24vh auto 0 auto;
     border-radius: 10px;
 }
 
@@ -88,4 +88,22 @@ form div label {
 #No-Account a {
     text-decoration: none;
     color: #0A7B52;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: #dc3545;
+}
+
+.form-field.success input {
+    border-color: #28a745;
+}
+
+
+.form-field small {
+    color: #dc3545;
+    font-size: 1.6rem;
 }

@@ -91,6 +91,24 @@ form div label {
 }
 
 
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: #dc3545;
+}
+
+.form-field.success input {
+    border-color: #28a745;
+}
+
+
+.form-field small {
+    color: #dc3545;
+    font-size: 1.6rem;
+}
+
 #submit-btn {
     border: none;
     background-color: #208C64;

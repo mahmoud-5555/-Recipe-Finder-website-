@@ -16,32 +16,37 @@
 
     <div class="container">
         <h3 class="login-title">SignUp</h3>
-        <form>
-            <div id="email-filed">
+        <form id="signUp">
+            <div class="form-field" id="email-filed">
                 <label for="Email">Email Address</label>
-                <input type="email" placeholder="Name@gamil.com">
+                <input type="email" placeholder="Name@gamil.com" id="email">
+                <small></small>
             </div>
 
             <div id="name">
-                <div id="first-name">
-                    <label for="Email">First Name</label>
-                    <input type="email" placeholder="First Name">
+                <div class="form-field">
+                    <label for="first-name">First Name</label>
+                    <input type="text" placeholder="First Name" id="first-name">
+                    <small></small>
                 </div>
 
-                <div id="flast-name">
-                    <label for="Email">Last Name</label>
-                    <input type="email" placeholder="Last Name">
+                <div class="form-field">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" placeholder="Last Name" id="last-name">
+                    <small></small>
                 </div>
             </div>
 
-            <div id="password">
+            <div class="form-field">
                 <label for="password">Password</label>
-                <input type="password" placeholder="password">
+                <input type="password" placeholder="password" id="password">
+                <small></small>
             </div>
 
-            <div>
+            <div class="form-field">
                 <label for="password">Confirm Password</label>
                 <input type="password" placeholder="Password" id="confirm-password">
+                <small></small>
             </div>
             
             <div class="admin_checkbox">
@@ -56,6 +61,6 @@
         </form>
 
     </div>
-    
+    <script src="js/SignUp.js"></script>
 </body>
 </html>
