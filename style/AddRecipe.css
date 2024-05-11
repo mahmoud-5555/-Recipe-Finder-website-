@@ -70,13 +70,15 @@ form div {
     flex-direction: row;
 }
 
-.ingredients button {
+#add_Ingredient {
     border: none;
     padding: 12px 8px;
     background-color: #208C64;
     color: white;
     font-weight: 500;
     border-radius: 4px;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .recipe_desc {

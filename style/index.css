@@ -40,11 +40,13 @@ img {
 
 
 main {
-    display: flex;
-    min-height: 100dvh;
+
 }
 
-
+.wrapper {
+    display: flex;
+    height: 100dvh;
+}
 .left, .right {
     width: 50dvw;
     height: 100%;
